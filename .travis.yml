@@ -5,3 +5,13 @@ python:
 
 install:
   - pip install -r requirnemtns.txt
+
+script:
+
+  - sonar-scanner
+
+addons:
+ sonarcloud:
+   organization: zkhalido-github # the key of the org you chose at step #3
+   token:
+     secure: ${newToken}
