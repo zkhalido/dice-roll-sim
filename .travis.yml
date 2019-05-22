@@ -3,7 +3,6 @@ python:
   - "3.6"
 
 script:
-
   - sonar-scanner
 
 addons:
